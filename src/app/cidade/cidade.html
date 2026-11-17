@@ -1,0 +1,15 @@
+<p>cidade works!</p>
+<div class="detalhe-cidade" *ngIf="cidadeAtual; else naoEncontrada">
+  <h2>{{ cidadeAtual.titulo }}</h2>
+  <p class="pais"><strong>País:</strong> {{ cidadeAtual.pais }}</p>
+  <img [src]="cidadeAtual.imagem" [alt]="cidadeAtual.titulo" class="foto-cidade">
+  <p class="descricao">{{ cidadeAtual.descricao }}</p>
+  <a routerLink="/" class="btn-voltar">← Voltar para a página inicial</a>
+</div>
+
+<ng-template #naoEncontrada>
+  <div class="detalhe-cidade">
+    <h2>Cidade não encontrada</h2>
+    <a routerLink="/" class="btn-voltar">← Voltar ao início</a>
+  </div>
+</ng-template>

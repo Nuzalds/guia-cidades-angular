@@ -1,0 +1,41 @@
+.topo {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.topo h1 {
+  margin: 0 0 15px 0;
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: #e2e8f0;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #334155;
+  transition: background-color 0.2s;
+}
+
+.menu a:hover,
+.menu a.ativo {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.conteudo {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}

@@ -1,0 +1,13 @@
+<header class="topo">
+  <h1>Guia de Cidades - AP1B</h1>
+  <nav class="menu">
+    <a routerLink="/" routerLinkActive="ativo" [routerLinkActiveOptions]="{ exact: true }">Início</a>
+    <a routerLink="/cidade/rio" routerLinkActive="ativo">Rio de Janeiro</a>
+    <a routerLink="/cidade/ny" routerLinkActive="ativo">New York</a>
+    <a routerLink="/cidade/paris" routerLinkActive="ativo">Paris</a>
+  </nav>
+</header>
+
+<main class="conteudo">
+  <router-outlet></router-outlet>
+</main>
